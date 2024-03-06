@@ -1,4 +1,4 @@
-## terraform 버전 및 Provider 정의 ## 
+## terraform 버전 및 Provider 정의 ##
 terraform {
   required_providers {
     aws = {
