@@ -1,7 +1,8 @@
 # ETEVERS Hands On Lab feat. Terraform 
 
 테라폼을 이용한 AWS 인프라 배포
-
+폴더 구조
+```shell
 .
 ├── 1. prod-vpc.tf
 ├── 2. prod-gw_routing-table.tf
@@ -15,3 +16,4 @@
 ├── backend.tf
 ├── user_data.sh
 └── user_data.tf
+```
