@@ -3,7 +3,7 @@
 #   name_prefix                 = "Co-AN2-PRD-WEB-LT"     // EC2 템플릿(Launch configuration) 이름 지정 
 #   image_id                    = "ami-0ff1cd0b5d98708d1" //Amazon 2023 AMI (latest)
 #   instance_type               = "t3.small" // "t3.small"
-#   key_name                    = "STA" //**꼭 자신이 만든 키 Name 입력**MyKeyPair
+#   key_name                    = "MyKeyPair" //**꼭 자신이 만든 키 Name 입력**MyKeyPair
   
 #   vpc_security_group_ids = [aws_security_group.Co-PRD-PRI-WEB-SG.id]
 
