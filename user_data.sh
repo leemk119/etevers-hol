@@ -10,7 +10,7 @@ chkconfig httpd on
 systemctl start httpd
 
 #Install the web pages for our lab
-if [ ! -f /var/www/html/immersion-day-app-php7.zip ]; then
+if [ ! -f /var/www/html/Cloud-up-app-php7.zip ]; then
    cd /var/www/html
    wget -O 'Cloud-up-app-php7.zip' 'https://etevers-hol.s3.ap-northeast-2.amazonaws.com/Cloud-up-app-php7.zip'
    unzip Cloud-up-app-php7.zip
