@@ -12,7 +12,7 @@ resource "aws_db_instance" "Co-AN2-PRD-MAIN-DB-RDS" {
   multi_az                  = true // false
   db_subnet_group_name      = aws_db_subnet_group.Co-AN2-PRD-DB-SUBNET-GRP.name
   parameter_group_name      = null
-  skip_final_snapshot       = true // false
+  skip_final_snapshot       = true // false (final snapshot disable)
   final_snapshot_identifier = "prod-rds-snap"
   backup_retention_period   = 0 // auto backup disable
 }
