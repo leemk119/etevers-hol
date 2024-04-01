@@ -12,9 +12,9 @@
 #   multi_az                  = true // false
 #   db_subnet_group_name      = aws_db_subnet_group.Co-AN2-PRD-DB-SUBNET-GRP.name
 #   parameter_group_name      = null
-#   skip_final_snapshot       = true // false (final snapshot disable)
-#   final_snapshot_identifier = "prod-rds-snap"
-#   backup_retention_period   = 0 // auto backup disable
+#   skip_final_snapshot       = true // false (종료시 생성 비활성화)
+#   # final_snapshot_identifier = "prod-rds-snap"
+#   backup_retention_period   = 0 // 자동 백업 보존 0
 # }
 
 # ## DB SubnetGroup 생성 ##
