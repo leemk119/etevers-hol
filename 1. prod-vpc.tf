@@ -73,27 +73,27 @@ resource "aws_subnet" "Co-AN2-AZc-PRD-SBN-PRI-WEB" {
   }
 }
 
-## PRD 프라이빗 WAS 서브넷 A 생성 ##
-resource "aws_subnet" "Co-AN2-AZa-PRD-SBN-PRI-WAS" {
-  vpc_id            = aws_vpc.Co-AN2-PRD-VPC.id
-  cidr_block        = "10.0.11.0/24"
-  availability_zone = "ap-northeast-2a"
+# ## PRD 프라이빗 WAS 서브넷 A 생성 ##
+# resource "aws_subnet" "Co-AN2-AZa-PRD-SBN-PRI-WAS" {
+#   vpc_id            = aws_vpc.Co-AN2-PRD-VPC.id
+#   cidr_block        = "10.0.11.0/24"
+#   availability_zone = "ap-northeast-2a"
 
-  tags = {
-    Name = "co-an2-aza-rpd-sbn-pri-was"
-  }
-}
+#   tags = {
+#     Name = "co-an2-aza-rpd-sbn-pri-was"
+#   }
+# }
 
-## PRD 프라이빗 WAS 서브넷 C 생성 ##
-resource "aws_subnet" "Co-AN2-AZc-PRD-SBN-PRI-WAS" {
-  vpc_id            = aws_vpc.Co-AN2-PRD-VPC.id
-  cidr_block        = "10.0.12.0/24"
-  availability_zone = "ap-northeast-2c"
+# ## PRD 프라이빗 WAS 서브넷 C 생성 ##
+# resource "aws_subnet" "Co-AN2-AZc-PRD-SBN-PRI-WAS" {
+#   vpc_id            = aws_vpc.Co-AN2-PRD-VPC.id
+#   cidr_block        = "10.0.12.0/24"
+#   availability_zone = "ap-northeast-2c"
 
-  tags = {
-    Name = "co-an2-aza-rpd-sbn-pri-was"
-  }
-}
+#   tags = {
+#     Name = "co-an2-aza-rpd-sbn-pri-was"
+#   }
+# }
 
 ## PRD 프라이빗 DB 서브넷 A 생성 ##
 resource "aws_subnet" "Co-AN2-AZa-PRD-SBN-PRI-DB" {
