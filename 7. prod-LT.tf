@@ -1,8 +1,8 @@
 # ## EC2 템플릿 신규 생성##
 # resource "aws_launch_template" "Co-AN2-PRD-WEB-LT" {
-#   name_prefix                 = "Co-AN2-PRD-WEB-LT"     // EC2 템플릿(Launch configuration) 이름 지정 
+#   name_prefix                 = "Co-AN2-PRD-WEB-LT"     // EC2 템플릿(Launch configuration)
 #   image_id                    = "ami-0ff1cd0b5d98708d1" //Amazon 2023 AMI (latest)
-#   instance_type               = "t3.small" // "t3.small"
+#   instance_type               = "t3.small"
 #   key_name                    = "MyKeyPair" //**꼭 자신이 만든 키 Name 입력**MyKeyPair
   
 #   vpc_security_group_ids = [aws_security_group.Co-PRD-PRI-WEB-SG.id]
@@ -23,7 +23,7 @@
 #   }
 
 #   tag_specifications {
-#     resource_type = "instance" // 태그 적용될 리소스
+#     resource_type = "instance"
 #     tags = {
 #       Name = "ASLT-WEB-EC2"
 #     }

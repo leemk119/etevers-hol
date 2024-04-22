@@ -3,7 +3,7 @@
 #   name               = "Co-AN2-PRD-WEB-EXT-ALB"
 #   internal           = false
 #   load_balancer_type = "application"
-#   security_groups    = ["${aws_security_group.Co-PRD-PUB-SG.id}"] //보안그룹 지정
+#   security_groups    = ["${aws_security_group.Co-PRD-PUB-SG.id}"]
 
 #   # access_logs { // 액세스 로그 설정: ALB에서 발생하는 트래픽 로그 수집 (HoL에서는 사용 안함)
 #   #   bucket  = "etevershol-alb-logs"

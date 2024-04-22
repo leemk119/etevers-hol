@@ -44,8 +44,8 @@
 #     from_port = 80
 #     to_port   = 80
 #     protocol  = "tcp"
-#     # cidr_blocks = ["0.0.0.0/0"] # 외부 접근 허용
-#     security_groups = [aws_security_group.Co-PRD-PUB-SG.id] // ALB의 보안 그룹으로부터의 트래픽만 허용
+#     # cidr_blocks = ["0.0.0.0/0"]
+#     security_groups = [aws_security_group.Co-PRD-PUB-SG.id]
 #   }
 
 #   ## ingress rules 정의
@@ -53,8 +53,8 @@
 #     from_port = 443
 #     to_port   = 443
 #     protocol  = "tcp"
-#     # cidr_blocks = ["0.0.0.0/0"] # 외부 접근 허용
-#     security_groups = [aws_security_group.Co-PRD-PUB-SG.id] // ALB의 보안 그룹으로부터의 트래픽만 허용
+#     # cidr_blocks = ["0.0.0.0/0"]
+#     security_groups = [aws_security_group.Co-PRD-PUB-SG.id]
 #   }
 
 #   tags = {
@@ -104,7 +104,7 @@
 #     cidr_blocks = ["0.0.0.0/0"]
 #   }
 
-#   ## ingress rules 정의 / 3306 tpc 허용
+#   ## ingress rules 정의
 #   ingress {
 #     from_port   = 3306
 #     to_port     = 3306

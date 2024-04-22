@@ -14,7 +14,6 @@
 #   ami           = "ami-0ff1cd0b5d98708d1" //Amazon 2023 AMI latest)
 #   instance_type = "t3.small"              // 2vcpu,2G
 #   key_name      = "MyKeyPair"             //**꼭 자신이 만든 키 Name 입력**
-#   # user_data     = data.template_file.web_user_data.rendered //사용자 데이터 지정 (WEB 서버 구성)
 #   user_data = <<-EOF
 #   #!/bin/bash
 
@@ -27,7 +26,7 @@
 #   echo "Hello, ETEVERS IaC HoL Server-1!" > /var/www/html/index.html
 #   EOF
 
-#   network_interface { // ENI 지정
+#   network_interface {
 #     network_interface_id = aws_network_interface.Co-AN2-AZa-PRD-PRI-WEB-EC2-eni.id
 #     device_index         = 0
 #   }
@@ -61,7 +60,6 @@
 #   ami           = "ami-0ff1cd0b5d98708d1" //Amazon 2023 AMI latest)
 #   instance_type = "t3.small"              // 2vcpu,2G
 #   key_name      = "MyKeyPair"             //**미리 생성한 키 사용 (꼭 자신이 만든 키 Name 입력)**
-#   # user_data     = data.template_file.web_user_data.rendered //사용자 데이터 지정 (WEB 서버 구성)
 #   user_data = <<-EOF
 #   #!/bin/bash
 
@@ -74,7 +72,7 @@
 #   echo "Hello, ETEVERS IaC HoL Server-2!" > /var/www/html/index.html
 #   EOF
 
-#   network_interface { // ENI 지정
+#   network_interface {
 #     network_interface_id = aws_network_interface.Co-AN2-AZc-PRD-PRI-WEB-EC2-eni.id
 #     device_index         = 0
 #   }
