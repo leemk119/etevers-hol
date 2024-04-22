@@ -1,7 +1,6 @@
 # ETEVERS Hands On Lab feat. Terraform 
 
-테라폼을 이용한 AWS 인프라 배포
-폴더 구조
+테라폼을 이용한 AWS 인프라 폴더 구조
 
 ```shell
 .
