@@ -11,7 +11,7 @@
 
 # ## WEB1 EC2 생성 ##
 # resource "aws_instance" "Co-AN2-AZa-PRD-PRI-WEB-EC2" {
-#   ami           = "ami-0ff1cd0b5d98708d1" //Amazon 2023 AMI latest)
+#   ami           = "ami-04c596dcf23eb98d8" //Amazon 2023 AMI latest)
 #   instance_type = "t3.small"              // 2vcpu,2G
 #   key_name      = "MyKeyPair"             //**꼭 자신이 만든 키 Name 입력**
 #   user_data = <<-EOF
@@ -57,7 +57,7 @@
 
 # ## WEB2 EC2 생성 ##
 # resource "aws_instance" "Co-AN2-AZc-PRD-PRI-WEB-EC2" {
-#   ami           = "ami-0ff1cd0b5d98708d1" //Amazon 2023 AMI latest)
+#   ami           = "ami-04c596dcf23eb98d8" //Amazon 2023 AMI latest)
 #   instance_type = "t3.small"              // 2vcpu,2G
 #   key_name      = "MyKeyPair"             //**미리 생성한 키 사용 (꼭 자신이 만든 키 Name 입력)**
 #   user_data = <<-EOF
