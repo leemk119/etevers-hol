@@ -109,7 +109,8 @@
 #     from_port   = 3306
 #     to_port     = 3306
 #     protocol    = "tcp"
-#     cidr_blocks = ["0.0.0.0/0"]
+#     # cidr_blocks = ["0.0.0.0/0"]
+#     security_groups = [aws_security_group.Co-PRD-PRI-WEB-SG.id]
 #   }
 
 #   tags = {
